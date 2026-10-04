@@ -1,462 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Kevin Nicolas, desenvolvedor full stack e profissional de dados.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Kevin Nicolas | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Soluções digitais que conectam engenharia, dados e experiência.">
+  <meta property="og:type" content="website">
+  <title>Kevin Nicolas | Desenvolvedor Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body
-
-   
-    
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#home">Port<span>fólio</span></a></div>
-            <ul class="menu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Especialidades</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="menu-btn">
-                <ion-icon name="menu-outline"></ion-icon>
-            </div>
-        </div>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">KN<span>.</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-list"><span></span><span></span></button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#habilidades">Habilidades</a></li><li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5583987219866" target="_blank" rel="noopener noreferrer">Vamos conversar <span aria-hidden="true">↗</span></a>
     </div>
+  </header>
 
-    <!--home inicio-->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Bem vindo(a), eu sou</div>
-                <div class="text-2">Kevin Nicolas</div>
-                <div class="text-3"><span class="typing"></span></div>
-                <a href="https://contate.me/kevinicolas">Fale Comigo</a>
-            </div>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div><div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Olá, eu sou Kevin Nicolas</p>
+          <h1>Eu construo produtos digitais que <em>fazem sentido.</em></h1>
+          <p class="hero-description">Desenvolvedor <span class="typed-text" data-words="Full Stack,orientado a dados,focado em produto">Full Stack</span><span class="caret" aria-hidden="true"></span> transformando problemas complexos em experiências simples, robustas e escaláveis.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="https://github.com/kevinicolasdev" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .7A11.5 11.5 0 0 0 8.36 23.1c.58.1.79-.25.79-.56v-2.02c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.57-.3-5.27-1.29-5.27-5.7 0-1.26.45-2.3 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.77 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.06.74.8 1.19 1.83 1.19 3.1 0 4.42-2.71 5.4-5.29 5.69.42.36.79 1.06.79 2.14v3.04c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg> GitHub
+            </a>
+          </div>
+          <div class="hero-meta"><div><strong>3+</strong><span>anos criando</span></div><div><strong>16</strong><span>projetos publicados</span></div><div><strong>UFCG</strong><span>Ciência da Computação</span></div></div>
         </div>
-    </section>
-    
-    <!--sessão sobre-->
-    <section class="about" id="about">
-        <div class="max-width">
-            <div class="about-content">
-
-                <div class="colum left">
-                    <img src="image/img-1.svg" alt="">
-                </div>
-
-                <div class="column right">
-
-                    <h3 class="titulo">PRAZER, <span>KEVIN.</span></h3>
-
-                    <div class="text">Trabalho com <span class="typing-2"></span></div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <p style="margin-bottom: 20px;">Atualmente trabalho no Virtus com Pesquisa, Desenvolvimento e Inovação (PD&I), atuando como Full Stack, onde aplico meus
-                    conhecimentos em diversas tecnologias para criar soluções inovadoras.</p>
-
-                    <p style="margin-bottom: 20px;">Possuo experiência significativa em Ciência de Dados, adquirida ao longo de quase um ano de trabalho. Durante esse
-                    período, trabalhei com Processamento de Linguagem Natural (PLN), Análise Exploratória de Dados (AED), Mineração de
-                    Dados, Modelagem Preditiva, e outras técnicas para extrair insights valiosos de grandes volumes de dados. Tenho me
-                    aprofundado no estudo da engenharia de prompts e no funcionamento dos assistentes de IA, como os desenvolvidos pela
-                    OpenAI, explorando a fundo como os modelos de inteligência artificial podem ser otimizados e aplicados em diferentes
-                    contextos. Essa experiência, aliada ao meu conhecimento em bancos de dados (PostgreSQL), servidores e desenvolvimento
-                    Full-Stack (JavaScript, TypeScript, React, Angular, Node.js, Django, Spring Boot), me permite integrar diversas
-                    tecnologias e extrair insights estratégicos para a tomada de decisões.</p>
-                    
-                    <p style="margin-bottom: 20px;">Sou bacharelando em Ciência da Computação pela UFCG. Ao longo dessa jornada acadêmica e profissional, desenvolvi uma
-                    variedade de projetos, incluindo sites responsivos e softwares robustos, utilizando as mais diversas ferramentas e
-                    linguagens (Clojure, Haskell, Prolog, C, Docker, Amazon S3). Tenho experiência com variadas tecnologias, o que me torna
-                    um profissional versátil, capaz de aplicar conceitos avançados e explorar diferentes paradigmas para oferecer soluções
-                    eficientes e inovadoras.</p>
-                    
-                    <p style="margin-bottom: 20px;">Tenho experiência sólida em liderança de projetos e trabalho em equipe, com foco no padrão Scrum, modelagem detalhada,
-                    seleção de estruturas de dados eficientes e implementação de testes automatizados. Minha atuação envolve não apenas o
-                    desenvolvimento técnico, mas também a otimização de processos para garantir a entrega de soluções de alta qualidade para
-                    empresas reais.</p>  
-                    
-                    <p style="margin-bottom: 20px;">Durante minha trajetória no IFPB, fui responsável pela liderança de projetos de pesquisa, e tive a oportunidade de
-                    apresentar um artigo de minha autoria no CONEPETRO21, Congresso Nacional de Engenharia de Petróleo e Gás. Esse evento
-                    foi um marco na minha carreira acadêmica, destacando minha capacidade de produzir e comunicar resultados técnicos. Os
-                    projetos em que estive envolvido também foram reconhecidos na plataforma Lattes, reforçando minha habilidade em lidar
-                    com informações complexas e contribuir para o avanço do conhecimento técnico-científico!</p>                    
-
-                    <a href="https://www.linkedin.com/in/kevinicolas/">LinkedIn</a>
-                </div>
-            </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="portrait-frame"><div class="portrait-backdrop"></div><img src="image/profile-3x4.png" alt="Retrato profissional de Kevin Nicolas" width="800" height="800"><div class="status-card"><span class="status-dot"></span><div><small>Status atual</small><strong>Disponível para conexões</strong></div></div><div class="code-chip" aria-hidden="true">&lt;build /&gt;</div></div>
         </div>
-    </section>
-    
-    <!--sessão Projetos-->
-    <section class="projects" id="projects">
-        <div class="max-width">
-            <div class="projects">
-                <div class="project-titles">
-                    <h2 class="titulo"><span>PROJETOS</span></h2>
-                </div>
-            </div>
-
-            <button class="carousel-prev-btn">&lt;</button>
-
-            <!-- Carrossel de Projetos -->
-            <div class="carousel owl-carousel">
-                
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/projeto-plp">
-                   
-                            <div class="text">
-                                <ion-icon name="bicycle-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">CodeFit</span>
-                            </div>
-                            <p>Esse projeto forma a base de um sistema de gestão para uma academia em HASKELL, ajudando a administrar os membros, pagamentos, equipamentos, horários, treinos e a fornecer informações úteis para a administração e os clientes.</p>
-                            
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/PitsA">
-                            <div class="text">
-                                <ion-icon name="pizza-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">PitsA</span>
-                            </div>
-    
-                            <p>Software desenvolvido em Java do funcionamento de uma pizzaria com sistema de delivery. O projeto conta com a utilização do banco de dados H2 e testes automatizados que cobrem todo o funcionamento do sistema.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 3-->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Projeto-Mercado-Pypreco">
-                            
-                            <div class="text">
-                                <ion-icon name="list-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Mercado Pypreco</span>
-                               
-                            </div>
-
-                           
-                            <p>Projeto de um supermercado em Python, utilizando bibliotecas, funções, banco de dados e outros recursos. Destaque para o controle de estoque incluído no projeto.</p>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Card 4 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/projeto-plp-prolog">
-
-                            <div class="text">
-                                <ion-icon name="bicycle-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">CodeFit(V2)</span>
-                               
-                            </div>
-
-                          
-                            <p>Esse projeto forma a base de um sistema de gestão para uma academia em PROLOG, ajudando a administrar os membros, pagamentos, equipamentos, horários, treinos e a fornecer informações úteis para a administração e os clientes.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/DocuMin">
-
-                            <div class="text">
-                                <ion-icon name="document-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">DocuMin</span>
-                               
-                            </div>
-
-                           
-                            <p>Projeto para criação de documentos em Java, utilizando fachada, onde é possível criar diferentes tipos de documentos e realizar operações com tais, assim como obter diferentes visões de cada um.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Projeto-MrBet">
-
-                            <div class="text">
-                                <ion-icon name="football-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">MrBet</span>
-                               
-                            </div>
-
-                          
-                            <p>Projeto em Java desenvolvendo um sistema de aposta e campeonatos esportivos.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/SISTEMA-BANCARIO-C">
-
-                            <div class="text">
-                                <ion-icon name="cash-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Sistema Bancário C</span>
-                               
-                            </div>
-                            
-
-                            <p>Desenvolvimento de um Sistema Bancário em C, com funções de retirada, depósito, extrato e investimento.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/AgendaDeContatos-Project">
-
-                            <div class="text">
-                                <ion-icon name="newspaper-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Agenda de Contato</span>
-                               
-                            </div>
-
-                          
-                            <p>Projeto em Java desenvolvendo uma agenda de contatos com diversas funcionalidades.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 9 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/ProjetoJava_Escola">
-
-                            <div class="text">
-                                <ion-icon name="calendar-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Rotina Escolar</span>
-                               
-                            </div>
-
-                          
-                            <p>Projeto em Java para acompanhar a rotina escolar de um estudante.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 10 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/kevinicolas">
-
-                            <div class="text">
-                                <ion-icon name="person-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Portfólio</span>
-                               
-                            </div>
-
-                          
-                            <p>Portfólio pessoal desenvolvido em HTML, CSS e JavaScript.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 11 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Jogo_da_velha">
-
-                            <div class="text">
-                                <ion-icon name="game-controller-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Jogo da Velha</span>
-                               
-                            </div>
-
-                           
-                            <p>Jogo da velha para rodar no terminal, em Python e Clojure.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 12 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Clinica-Medica-SQL">
-
-                            <div class="text">
-                                <ion-icon name="bandage-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Clinica Medica SQL</span>
-                            </div>
-
-                           
-                            <p>Projeto SQL para administração de uma clínica médica.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 13 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Pagina-Web">
-
-                            <div class="text">
-                                <ion-icon name="globe-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Página Web</span>
-                            </div>
-
-                           
-                            <p>Página Web desenvolvida em JavaScript, HTML e CSS.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 14 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/IMC-BMI">
-
-                            <div class="text">
-                                <ion-icon name="calculator-outline" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Calculadora IMC</span>
-                            </div>
-
-                           
-                            <p>Calculadora de IMC desenvolvida como projeto inicial em Front-end.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 15 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Google-Clone">
-
-                            <div class="text">
-                                <ion-icon name="logo-chrome" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Google Clone</span>
-                            </div>
-
-                           
-                            <p>Clonagem da página inicial do Google usando CSS.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 16 -->
-                <div class="card">
-                    <div class="box">
-                        <a href="https://github.com/kevinicolas22/Criacao-de-agente-inteligente">
-
-                            <div class="text">
-                                <ion-icon name="logo-ionitron" style="vertical-align: middle;"></ion-icon>
-                                <span style="vertical-align: middle;">Agente Inteligente</span>
-                            </div>
-                            <p>Implementação de um agente Inteligente em Python.Objetivo: Implementar um agente inteligente simples que tomará decisões em um ambiente simulado. O agente será capaz de navegar em um grid 2D para encontrar um objetivo enquanto evita obstáculos.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            <!-- Botões Anterior e Próximo -->
-            <button class="carousel-next-btn">&gt;</button>
-
-
-        </div>
+      </div>
+      <a class="scroll-hint" href="#sobre" aria-label="Rolar para a seção sobre"><span></span> role para descobrir</a>
     </section>
 
-    <!-- Sessão Especialidades -->
-    <section class="especiliadades" id="skills">
-        <div class="interface">
-            <h2 class="titulo"><span>ESPECIALIDADES</span></h2>
-            <div class="flex">
-                <div class="especialidades-box">
-                    <i class="fas fa-laptop-code"></i> <!-- Ícone para desenvolvimento -->
-                    <h3>Dev</h3>
-                    <p>Criação de aplicativos e websites com tecnologias modernas, garantindo funcionalidade e design responsivo. Minha experiência abrange um amplo espectro de tecnologias e linguagens de programação, como Java, JavaScript, C, Python, Haskell, Prolog, SQL, Clojure e Assembly.</p>
-                </div><!--especialidades-box-->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="section-intro reveal"><p class="section-number">01 / SOBRE</p><h2>Entre o código e o impacto.</h2></div>
+        <div class="about-copy reveal" data-delay="100">
+          <p class="about-lead">Gosto de transformar ideias ambiciosas em sistemas claros, funcionais e preparados para crescer.</p>
+          <div class="about-columns"><p>Atuo com Pesquisa, Desenvolvimento e Inovação (PD&amp;I) no Virtus, desenvolvendo soluções full stack e conectando diferentes tecnologias para resolver desafios reais.</p><p>Minha experiência também passa por Ciência de Dados, PLN, análise exploratória, modelagem preditiva e inteligência artificial. Sou bacharelando em Ciência da Computação pela UFCG.</p></div>
+          <div class="about-links"><a href="https://www.linkedin.com/in/kevinicolas/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/kevinicolasdev" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+        </div>
+      </div>
+    </section>
 
-                <div class="especialidades-box">
-                    <i class="fas fa-tools"></i> <!-- Ícone para conserto de PC -->
-                    <h3>Ti</h3>
-                    <p>Especializado em diagnóstico e reparo de hardware de computadores, incluindo substituição de componentes e solução de problemas técnicos. Formatação, montagem, limpeza e instalação de programas são parte dos serviços oferecidos, garantindo o desempenho ideal do seu hardware e software.</p>
-                </p>
-                </div><!--especialidades-box-->
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-number">02 / PROJETOS</p><h2>Trabalhos selecionados.</h2></div><p>Uma seleção de projetos que explora diferentes linguagens, paradigmas e tipos de problema.</p></div>
+        <div class="projects-toolbar reveal">
+          <div class="project-filters" role="group" aria-label="Filtrar projetos"><button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button><button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button><button class="filter-button" type="button" data-filter="software" aria-pressed="false">Software</button><button class="filter-button" type="button" data-filter="dados" aria-pressed="false">Dados &amp; IA</button></div>
+          <div class="project-navigation" aria-label="Navegar pelos projetos"><button type="button" data-project-prev aria-label="Projetos anteriores">←</button><span data-project-page aria-live="polite">1 / 2</span><button type="button" data-project-next aria-label="Próximos projetos">→</button></div>
+        </div>
+        <div class="projects-grid" data-projects aria-live="polite"></div>
+        <div class="projects-footer reveal"><p>Use as setas para visualizar os próximos projetos.</p><a class="text-link" href="https://github.com/kevinicolasdev?tab=repositories" target="_blank" rel="noopener noreferrer">Todos os repositórios <span>↗</span></a></div>
+      </div>
+    </section>
 
-                <div class="especialidades-box">
-                    <i class="fas fa-paint-brush"></i> <!-- Ícone para design -->
-                    <h3>Design</h3>
-                    <p>Criação de visuais atraentes e eficazes usando ferramentas como o Canva. Meu trabalho inclui design de interfaces, materiais promocionais e branding, garantindo uma comunicação visual clara e impactante.</p>
-                </div><!--especialidades-box-->
-            </div><!--flex-->
-        </div><!--interface-->
-    </section><!--especiliadades-->
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-number">03 / HABILIDADES</p><h2>Ferramentas são meios.<br>Resultado é o objetivo.</h2></div></div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal"><span class="expertise-index">01</span><div class="expertise-icon">{ }</div><h3>Engenharia de software</h3><p>Aplicações web e APIs responsivas, testáveis e bem estruturadas, do planejamento ao deploy.</p><div class="tag-list"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Java</span><span>Spring</span><span>Django</span></div></article>
+          <article class="expertise-card reveal" data-delay="100"><span class="expertise-index">02</span><div class="expertise-icon">AI</div><h3>Dados &amp; inteligência</h3><p>Dados transformados em decisão com análise, automação, NLP e integração de modelos de IA.</p><div class="tag-list"><span>Python</span><span>PostgreSQL</span><span>NLP</span><span>Machine Learning</span><span>Prompt Engineering</span></div></article>
+          <article class="expertise-card reveal" data-delay="200"><span class="expertise-index">03</span><div class="expertise-icon">UX</div><h3>Produto &amp; experiência</h3><p>Interfaces acessíveis, intuitivas e alinhadas ao objetivo do negócio, com atenção aos detalhes.</p><div class="tag-list"><span>UI Design</span><span>Responsividade</span><span>Acessibilidade</span><span>Scrum</span></div></article>
+        </div>
+        <div class="tech-marquee reveal" aria-label="Tecnologias"><div class="marquee-track"><span>JavaScript</span><i></i><span>TypeScript</span><i></i><span>React</span><i></i><span>Python</span><i></i><span>Java</span><i></i><span>PostgreSQL</span><i></i><span>Docker</span><i></i><span>AWS</span><i></i><span aria-hidden="true">JavaScript</span><i aria-hidden="true"></i><span aria-hidden="true">TypeScript</span><i aria-hidden="true"></i><span aria-hidden="true">React</span><i aria-hidden="true"></i><span aria-hidden="true">Python</span><i aria-hidden="true"></i><span aria-hidden="true">Java</span><i aria-hidden="true"></i><span aria-hidden="true">PostgreSQL</span><i aria-hidden="true"></i><span aria-hidden="true">Docker</span><i aria-hidden="true"></i><span aria-hidden="true">AWS</span><i aria-hidden="true"></i></div></div>
+      </div>
+    </section>
 
-    <!-- Sessão Fale Comigo -->
-    <section class="formulario" id="contact">
-            <div class="interface">
-                <h2 class="titulo"><span>CONTATO</span></h2>
+    <section class="contact" id="contato">
+      <div class="contact-noise" aria-hidden="true"></div>
+      <div class="container contact-inner reveal"><p class="section-number">04 / CONTATO</p><h2>Tem uma ideia?<br><em>Vamos construir.</em></h2><p>Estou sempre aberto a boas conversas, colaborações e projetos que desafiem o comum.</p><div class="contact-actions"><a class="button button-light" href="https://wa.me/5583987219866?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <span>↗</span></a><a class="button button-outline" href="mailto:nicolaskevin2511@gmail.com?subject=Vamos%20conversar">Enviar e-mail <span>↗</span></a><button class="copy-email" type="button" data-email="nicolaskevin2511@gmail.com"><span class="copy-label">Copiar e-mail</span><span aria-hidden="true">⎘</span></button></div></div>
+    </section>
+  </main>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Nome:" required>
-                    <input type="text" name="" id="" placeholder="E-mail:" required>
-                    <input type="text" name="" id="" placeholder="Número:">
-                    <textarea name="" id="" placeholder="Mensagem:" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
-            </div><!--interface-->
-    </section><!--formulario-->
-
-    <!-- footer -->
-    <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="btn-social">
-                        <a href="https://www.instagram.com/kevinn.s.s/"><button class="btn-instagram"><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://contate.me/kevinicolas"><button class="btn-whatsapp"><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="https://www.linkedin.com/in/kevinicolas/"><button class="btn-linkedin"><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/kevinicolas22"><button class="btn-github"><i class="bi bi-github"></i></button></a>
-                    </div><!--btn-social-->
-                </div>
-            </div><!--line-footer-->
-
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:nicolaskevin2511@gmail.com">nicolaskevin2511@gmail.com</a></p>
-            </div><!--line-footer-->
-        </div><!--interface-->
-    </footer>
-    
-    <!-- Scripts e Bibliotecas -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio">KN<span>.</span></a><p>© <span data-year></span> Kevin Nicolas.</p><div class="social-links"><a href="https://github.com/kevinicolasdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/in/kevinicolas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a><a href="https://wa.me/5583987219866" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a><a href="https://www.instagram.com/kevinn.s.s/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a></div></div></footer>
+  <a class="back-to-top" href="#inicio" aria-label="Voltar ao topo" data-back-to-top>↑</a>
+  <noscript><p class="noscript">Ative o JavaScript para visualizar os projetos e as interações.</p></noscript>
 </body>
 </html>
